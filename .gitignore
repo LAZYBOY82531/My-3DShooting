@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 /Assets/Homework/Basic Shooter Pack
 /Assets/Imports
+/Assets/Test
+/Assets/Homework/Basic Shooter Pack.meta
