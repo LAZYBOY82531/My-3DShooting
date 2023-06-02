@@ -18,7 +18,7 @@ public class Gun : MonoBehaviour
         if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, maxDistance))
         {
             IHitable hitable = hit.transform.GetComponent<IHitable>();
-            ParticleSystem effect = GameManager.Resource.Instantiate<ParticleSystem>("Prefabs/hitEffect", hit.point, Quaternion.LookRotation(hit.normal), true);
+            ParticleSystem effect = GameManager.Resource.Instantiate<ParticleSystem>("prefab/HitEffect", hit.point, Quaternion.LookRotation(hit.normal), true);
             effect.transform.parent = hit.transform;
             StartCoroutine(ReleaseRoutine(effect.gameObject));
 
